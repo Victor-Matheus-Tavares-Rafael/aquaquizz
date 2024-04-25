@@ -12,8 +12,14 @@
 </head>
 
 <body>
+
     <main class="main">
+        <audio style="padding-top: 5px;" loop autoplay>
+            <source src="assets/music/music.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
         <div class="container">
+            <div class="teste"></div>
             <section class="wrapper">
                 <div class="heading">
                     <h1 class="text font-gordinha">Bem-vindo(a) ao AquaQuizz! </h1>
@@ -27,11 +33,12 @@
                         <label for="password" class="input-label" hidden>Password</label>
                         <input type="password" name="password" id="password" class="input-field" placeholder="Senha">
                     </div>
-                    <div class="input-control" >
-                        <p class="p-link">Ainda não tem uma conta? <a href="cadastro.html" class="text text-links">Cadastre-se</a></p>
+                    <div class="input-control">
+                        <p class="p-link">Ainda não tem uma conta? <a href="cadastro.html"
+                                class="text text-links">Cadastre-se</a></p>
                     </div>
-                    <div class="input-control">                        
-                        <input type="submit" name="submit" style="width: 100%;" class="input-submit" value="Entrar" disabled>
+                    <div class="input-control text-center">
+                        <a class="input-submit w-100" href="index.html">Entrar</a>
                     </div>
                 </form>
             </section>

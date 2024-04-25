@@ -72,7 +72,7 @@ button {
     text-decoration: none;
 }
 
-.p-link{
+.p-link {
     color: #FFF;
     text-align: center;
     width: 100%;
@@ -119,6 +119,10 @@ img {
     }
 }
 
+#date{
+    color: #757575;
+}
+
 .font-gordinha {
     color: #FFF;
     text-align: center;
@@ -127,6 +131,14 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.w-100{
+    width: 100% !important;
 }
 
 .text {
@@ -163,6 +175,11 @@ img {
 }
 
 .main {
+    background: url(/assets/img/bubble.gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
     .wrapper {
         max-width: 28rem;
         width: 100%;
