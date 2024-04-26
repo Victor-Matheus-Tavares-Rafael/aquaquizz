@@ -1,31 +1,3 @@
-/*#bodylog, #bodycad{
-    background-image: url('assest/img/background.png');
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: auto;
-}*/
-
-:root {
-    --color-white: #ffffff;
-    --color-light: #f1f5f9;
-    --color-black: #121212;
-    --color-night: #001632;
-
-    --color-red: #f44336;
-    --color-blue: #1a73e8;
-    --color-gray: #80868b;
-    --color-grayish: #dadce0;
-
-    --shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-        0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-
 html {
     font-size: 100%;
     font-size-adjust: 100%;
@@ -38,21 +10,46 @@ html {
 *::after {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
-    color: var(--color-black);
+    color: #ffffff;
+}
+
+.p-poppins {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p-roboto {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.h1-roboto{
+    font-size: 85px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-com-fundo {
     background-image: url('/assets/img/background.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -69,20 +66,12 @@ button {
     border: none;
     outline: none;
     background: none;
-    text-decoration: none;
 }
 
 .p-link {
     color: #FFF;
     text-align: center;
     width: 100%;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .container {
@@ -96,30 +85,12 @@ img {
     margin: 0 auto;
 }
 
-.ion {
-    &-logo-apple {
-        font-size: 1.65rem;
-        line-height: inherit;
-        margin-right: 0.5rem;
-        color: var(--color-black);
-    }
-
-    &-logo-google {
-        font-size: 1.65rem;
-        line-height: inherit;
-        margin-right: 0.5rem;
-        color: var(--color-red);
-    }
-
-    &-logo-facebook {
-        font-size: 1.65rem;
-        line-height: inherit;
-        margin-right: 0.5rem;
-        color: var(--color-blue);
-    }
+.img-fluid {
+    max-width: 100%;
+    height: auto
 }
 
-#date{
+#date {
     color: #757575;
 }
 
@@ -133,45 +104,20 @@ img {
     line-height: normal;
 }
 
-.text-center{
+.d-flex{
+    display: flex !important;
+}
+
+.text-center {
     text-align: center !important;
 }
 
-.w-100{
-    width: 100% !important;
+.text-justify {
+    text-align: justify !important;
 }
 
-.text {
-    font-family: inherit;
-    line-height: inherit;
-    text-transform: unset;
-    text-rendering: optimizeLegibility;
-
-    &-large {
-        color: #FFF;
-        text-align: center;
-        font-family: Knewave;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &-normal {
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--color-black);
-    }
-
-    &-links {
-        font-size: 1rem;
-        font-weight: 400;
-        color: var(--color-blue);
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+.w-100 {
+    width: 100% !important;
 }
 
 .main {
@@ -189,8 +135,9 @@ img {
         outline: none;
         border-radius: 1rem;
         color: var(--color-black);
-        background: linear-gradient(180deg, rgba(91, 175, 222, 0.79) 0%, rgba(108, 116, 121, 0.79) 93%);
-        box-shadow: var(--shadow-large);
+        background: linear-gradient(180deg, rgb(91, 174, 222) 0%, #6c7479c9 93%);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
         .form {
             width: 100%;
@@ -215,8 +162,8 @@ img {
                 border: none;
                 outline: none;
                 border-radius: 2rem;
-                color: var(--color-black);
-                background: var(--color-light);
+                color: #000;
+                background: #f1f5f9;
                 text-transform: unset;
                 text-rendering: optimizeLegibility;
             }
@@ -233,69 +180,90 @@ img {
                 border: none;
                 outline: none;
                 border-radius: 2rem;
-                color: var(--color-white);
+                color: #fff;
                 background: #5BAFDE;
-                box-shadow: var(--shadow-medium);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
                 text-transform: capitalize;
                 text-rendering: optimizeLegibility;
-            }
-        }
-
-        .striped {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem 0;
-
-            &-line {
-                flex: auto;
-                flex-basis: auto;
-                border: none;
-                outline: none;
-                height: 2px;
-                background: var(--color-grayish);
-            }
-
-            &-text {
-                font-family: inherit;
-                font-size: 1rem;
-                font-weight: 500;
-                line-height: inherit;
-                color: var(--color-black);
-                margin: 0 1rem;
-            }
-        }
-
-        .method {
-            &-control {
-                margin-bottom: 1rem;
-            }
-
-            &-action {
-                font-family: inherit;
-                font-size: 0.95rem;
-                font-weight: 500;
-                line-height: inherit;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                padding: 0.35rem 1.25rem;
-                outline: none;
-                border: 2px solid var(--color-grayish);
-                border-radius: 2rem;
-                color: var(--color-black);
-                background: var(--color-white);
-                text-transform: capitalize;
-                text-rendering: optimizeLegibility;
-                transition: all 0.35s ease;
-
-                &:hover {
-                    background: var(--color-light);
-                }
             }
         }
     }
+}
+
+.div1{
+    background: linear-gradient(to right, rgba(0, 162, 255, 0.8), rgba(0, 162, 255, 0.5)), url(/assets/img/ocean-bg.jpg);
+    background-size: cover;
+}
+.div1 h1{
+    padding: 25px 0px;
+}
+.div1 h2{
+    padding: 25px 0px;
+}
+
+.div1 li{
+    font-size: 20px;
+    list-style-type:armenian !important;
+}
+
+.div-sobre{
+    gap: 5%;
+    padding: 0px 20%;
+}
+
+.div-sobre p{
+    padding: 25px 0px;
+}
+
+
+header, nav {
+    background: linear-gradient(to right,  rgba(0, 162, 255, 0.4), rgba(0, 162, 255), rgba(0, 162, 255, 0.4));
+    padding: 10px 0px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+nav {
+    display: flex;
+    background-position: center;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-box img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+}
+
+
+.link-box {
+    margin: 20px;
+}
+
+.link-box a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
 }
