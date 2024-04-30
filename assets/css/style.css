@@ -1,6 +1,5 @@
 html {
     font-size: 100%;
-    font-size-adjust: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -18,67 +17,90 @@ body {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
-    color: #ffffff;
+    color: #333;
     margin: 0;
-}  
+}
+
 .footer {
-    background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .footer-left h3 {
+}
+
+.footer-left h3 {
     margin-bottom: 10px;
-  }
-  
-  .footer-left p {
+}
+
+.footer-left p {
     font-size: 14px;
     line-height: 1.5;
-  }
-  
-  .footer-right ul {
+}
+
+.footer-right ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .footer-right ul li {
+}
+
+.footer-right ul li {
     display: inline-block;
     margin-right: 20px;
-  }
-  
-  .footer-right ul li a {
+}
+
+.footer-right ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease, color 0.3s ease;
-  }
-  
-  .footer-right ul li a:hover {
-    color: #fff; /* Adicione a cor de fundo ao hove */
-    animation: rainbow1 2s linear infinite; /* Adicione a animação de arco-íris */
-  }
-  
-  @keyframes rainbow1 {
-    0% { color: red; }
-    16.66% { color: orange; }
-    33.33% { color: yellow; }
-    50% { color: green; }
-    66.66% { color: blue; }
-    83.33% { color: indigo; }
-    100% { color: violet; }
-  }
+}
+
+.footer-right ul li a:hover {
+    color: #fff;
+    /* Adicione a cor de fundo ao hove */
+    animation: rainbow1 2s linear infinite;
+    /* Adicione a animação de arco-íris */
+}
+
+@keyframes rainbow1 {
+    0% {
+        color: red;
+    }
+
+    16.66% {
+        color: orange;
+    }
+
+    33.33% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    66.66% {
+        color: blue;
+    }
+
+    83.33% {
+        color: indigo;
+    }
+
+    100% {
+        color: violet;
+    }
+}
 
 .p-poppins {
     font-size: 18px;
@@ -94,7 +116,7 @@ body {
     font-style: italic;
 }
 
-h1{
+h1 {
     color: #ffffff;
     font-size: 85px;
     font-family: "Roboto", sans-serif;
@@ -103,7 +125,7 @@ h1{
 }
 
 header {
-    background-color: #000;
+    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +186,7 @@ button {
     line-height: normal;
 }
 
-.d-flex{
+.d-flex {
     display: flex !important;
 }
 
@@ -194,7 +216,7 @@ button {
         border: none;
         outline: none;
         border-radius: 1rem;
-        color: var(--color-black);
+        color: #000;
         background: linear-gradient(180deg, rgb(91, 174, 222) 0%, #6c7479c9 93%);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
             0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -222,7 +244,7 @@ button {
                 border: none;
                 outline: none;
                 border-radius: 2rem;
-                color: #000;
+                color: #333;
                 background: #f1f5f9;
                 text-transform: unset;
                 text-rendering: optimizeLegibility;
@@ -251,34 +273,72 @@ button {
     }
 }
 
-.div1{
+.div1 {
+    align-items: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.1) url(/assets/img/fundo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.div1 h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.div1 p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.div1 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.div1 a:hover {
+    text-decoration: underline;
+}
+
+
+.div2 {
     text-align: center;
     background: linear-gradient(to right, rgba(0, 162, 255, 0.8), rgba(0, 162, 255, 0.5)), url(/assets/img/ocean-bg.jpg);
     background-size: cover;
 }
-.div1 h1, .div1 h2, .div-sobre p{
+
+.div2 h1,
+.div2 h2,
+.div2 p,
+.div2 span {
+    color: #fff;
     padding: 25px 0px;
 }
 
-.div1 li{
+.div2 li {
     font-size: 20px;
-    list-style-type:armenian !important;
+    list-style-type: armenian !important;
 }
 
-.div-sobre{
+.div-sobre {
     gap: 5%;
     padding: 0px 20%;
 }
 
 footer {
-    background-color: #000000;
+    background-color: #333000;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
 nav {
-    display: flex;    
+    padding: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -288,12 +348,23 @@ nav a {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     padding: 15px;
+    margin: 0px 10px;
     color: #ffffff;
     text-decoration: none;
+    border-bottom: solid 1px #fff;
 }
 
-.fazerParte h1, .fazerParte h2{
+nav a:hover {
     color: #000;
+    border-radius: 8px;
+    box-shadow: #000 2px 2px;
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+.fazerParte h1,
+.fazerParte h2 {
+    color: #333;
     padding: 10px 0px;
 }
 
@@ -312,10 +383,11 @@ nav a {
 .image-box img {
     border-radius: 50%;
     box-shadow: #333 6px 3px 8px;
-    width: 400px;    
+    width: 400px;
     height: 100%;
     margin: 0 15px;
 }
+
 .image-box img:hover {
     transform: scale(1.05);
 }
@@ -325,19 +397,19 @@ nav a {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-  }
-  
-  .link-box h2 {
+}
+
+.link-box h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .link-box p {
+}
+
+.link-box p {
     color: #666;
     font-size: 16px;
     margin-bottom: 20px;
-  }
+}
 
 .btn {
     text-align: center;
@@ -346,47 +418,113 @@ nav a {
     font-size: xx-large;
     background-color: #dfdfdf;
     box-shadow: #333 1px 10px 5px;
-    color: #000;
+    color: #333;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.5s ease;
-  }
-  
-  .btn:hover {
-    animation: rainbow 2s linear infinite, shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite; /* Adicione a animação de arco-íris e shake */
-  }
-  
-  @keyframes rainbow {
-    0% { background-color: red; }
-    16.66% { background-color: orange; }
-    33.33% { background-color: yellow; }
-    50% { background-color: green; }
-    66.66% { background-color: blue; }
-    83.33% { background-color: indigo; }
-    100% { background-color: violet; }
-  }
-  
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-3px); }
-    100% { transform: translateX(0); }
-  }
+}
+
+.btn:hover {
+    animation: rainbow 2s linear infinite, shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+    /* Adicione a animação de arco-íris e shake */
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    16.66% {
+        background-color: orange;
+    }
+
+    33.33% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    66.66% {
+        background-color: blue;
+    }
+
+    83.33% {
+        background-color: indigo;
+    }
+
+    100% {
+        background-color: violet;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
 @media (max-width: 992px) {
+    .div1 {
+        text-align: center;
+        display: block;
+    }
+
+    .div1 p {
+        text-align: justify;
+    }
+
+    .div2,
+    .div-sobre {
+        padding: 0px 5px;
+    }
+
+    /*Tranformar em menu Hamburguer após inserir JS*/
     header {
         text-align: center;
         display: block;
     }
+
     nav {
-        display: block;        
-        padding: 18px 0px;
+        display: block !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 10px 0px !important;
     }
-    h1{
-        font-size:  55px;
+
+    nav a {
+        display: block;
+        margin: 5px 15px;
+        border-bottom: none;
+        border-radius: 5px;
+        background-color: #FFF;
+        color: #000;
     }
+
+    /**/
+    h1 {
+        font-size: 35px;
+    }
+
     .image-box {
         display: block;
         text-align: center;
@@ -394,12 +532,14 @@ nav a {
         justify-content: center;
         margin: 20px;
     }
+
     .image-box h2 {
         padding: 5px 0px;
     }
+
     .image-box img {
-        width: 300px;    
+        width: 300px;
         height: 100%;
         margin: 0 5px;
     }
-  }
+}
