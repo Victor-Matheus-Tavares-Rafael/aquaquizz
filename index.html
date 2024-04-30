@@ -17,17 +17,17 @@
 
 <body>
   <header>
-    <img class="img-fluid" src="assets/img/logo.png" alt="">
+    <a href="index.html"><img class="img-fluid" src="assets/img/logo.png" alt=""></a>
+    <nav>
+      <a class="p-roboto" href="#sobre">Sobre</a>
+      <a class="p-roboto" href="#facaParte">Faça Parte</a>
+      <a class="p-roboto" href="#jogueAgora">Jogue Agora</a>
+    </nav>
   </header>
 
-  <nav>
-    <a class="p-roboto" href="#">HOME</a>
-    <a class="p-roboto" href="#">SOBRE</a>
-    <a class="p-roboto" href="#">CONTATO</a>
-  </nav>
 
-  <div class="div div1">
-    <h1 class="h1-roboto text-center">O que é o AquaQuizz?</h1>
+  <div class="div1" id="sobre">
+    <h1 class="text-center">O que é o AquaQuizz?</h1>
     <div class="div div-sobre d-flex">
       <div class="text-center">
         <p class="p-roboto text-justify">O AquaQuizz é um jogo interativo envolvente e educativo que visa
@@ -42,24 +42,47 @@
     <h2 class="text-center">Clique na Tartaruga e veja o nosso repositório!</h2>
     <div class="text-center">
       <a href="https://github.com/Victor-Matheus-Tavares-Rafael/aquaquizz" target="_blank"><img
-          src="assets/img/tartaruga.gif" width="400px" alt=""></a>
+          src="assets/img/tartaruga.gif" class="img-fluid" width="400px" alt=""></a>
+    </div>
+    <span>Ela Se Chama AquaTurtle</span>
+  </div>
+
+  <div class="fazerParte" id="facaParte">
+    <h1 class="text-center">Venha Fazer Parte!</h1>
+    <div class="image-box">
+      <div>
+        <h2>É Um Prazer Ter Você Aqui!</h2>
+        <img src="assets/img/img-1.jpg" class="img-fluid" alt="Imagem 1">
+      </div>
+      <div>
+        <h2>O Meio Ambiente Agradece!</h2>
+        <img src="assets/img/img-2.jpg" class="img-fluid" alt="Imagem 2">
+      </div>
+      <div>
+        <h2>Veja Nossos Apoiadores:</h2>
+        <img src="assets/img/img-3.jpg" class="img-fluid" alt="Imagem 3">
+      </div>
     </div>
   </div>
 
-  <div class="image-box">
-    <img src="imagem1.jpg" alt="Imagem 1">
-    <img src="imagem2.jpg" alt="Imagem 2">
-    <img src="imagem3.jpg" alt="Imagem 3">
+  <div class="link-box" id="jogueAgora">
+      <h2>Teste seus conhecimentos sobre a vida na água!</h2>
+      <p>Descubra curiosidades incríveis sobre os habitantes dos mares e rios.</p>
+      <a class="btn" href="#">Comece o Quiz!</a>
   </div>
 
-  <div class="link-box">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-
-  <footer>
-    <p>Rodapé</p>
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>AquaQuizz</h3>
+      <p>Seu Quiz Sobre a Vida na Água</p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a class="p-roboto" href="#sobre">Sobre</a></li>
+        <li><a class="p-roboto" href="#facaParte">Faça Parte</a></li>
+        <li><a class="p-roboto" href="#jogueAgora">Jogue Agora</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 
