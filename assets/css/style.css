@@ -125,7 +125,7 @@ h1 {
 }
 
 header {
-    background-color: #333;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,40 +274,16 @@ button {
 }
 
 .div1 {
-    align-items: center;
-    display: flex;
-    background: rgba(0, 0, 0, 0.1) url(/assets/img/fundo.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 20px;
+    padding: 80px;
+    min-height: 475px;
+    background: url('/assets/img/ODS-14.jpg');
+    background-position: center center;
+    background-repeat: repeat;
 }
-
-.div1 h1 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.div1 p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.div1 a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.div1 a:hover {
-    text-decoration: underline;
-}
-
 
 .div2 {
     text-align: center;
-    background: linear-gradient(to right, rgba(0, 162, 255, 0.8), rgba(0, 162, 255, 0.5)), url(/assets/img/ocean-bg.jpg);
+    background: linear-gradient(to right, #0A97D9, rgb(10, 151, 217, 0.5)), url(/assets/img/ocean-bg.jpg);
     background-size: cover;
 }
 
@@ -330,7 +306,6 @@ button {
 }
 
 footer {
-    background-color: #333000;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -345,13 +320,12 @@ nav {
 
 nav a {
     font-size: 25px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: bold !important;
     padding: 15px;
     margin: 0px 10px;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    border-bottom: solid 1px #fff;
 }
 
 nav a:hover {
@@ -370,14 +344,10 @@ nav a:hover {
 
 
 .image-box {
-    background-color: rgba(48, 238, 252, 0.2);
-    padding: 100px 0px;
-    border-radius: 50%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 20px;
 }
 
 .image-box img {
@@ -393,10 +363,13 @@ nav a:hover {
 }
 
 .link-box {
+    margin-top: 15px;
+    padding: 50px !important;
+    background-color: #33333311;
+    border-radius: 15px;       
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 .link-box h2 {
@@ -481,15 +454,10 @@ nav a:hover {
     }
 }
 
-
 @media (max-width: 992px) {
-    .div1 {
-        text-align: center;
-        display: block;
-    }
-
-    .div1 p {
-        text-align: justify;
+    .div1 {        
+        min-height: 305px;
+        background: url('/assets/img/ODS-14.png');
     }
 
     .div2,
