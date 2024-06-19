@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaQuizz - Quiz</title>
+  <link rel="stylesheet" href="assets/css/quiz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <h2 id="question">Question Text</h2>
+      <ul id="choices">
+        <li><button class="choice" onclick="selectAnswer(0)">Choice 1</button></li>
+        <li><button class="choice" onclick="selectAnswer(1)">Choice 2</button></li>
+        <li><button class="choice" onclick="selectAnswer(2)">Choice 3</button></li>
+        <li><button class="choice" onclick="selectAnswer(3)">Choice 4</button></li>
+      </ul>
+      <button id="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+    </div>
+  </div>
+  <script src="assets/js/quiz.js"></script>
+</body>
+
+</html>
